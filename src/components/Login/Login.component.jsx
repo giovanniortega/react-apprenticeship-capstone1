@@ -29,23 +29,29 @@ const Login = () => {
   return (
     <Modal onClose={onCloseModal}>
       <form className={classes['login-form']} onSubmit={login}>
-        <h4>Login</h4>
-        <div className={classes['form-control']}>
-          <label htmlFor="user">User</label>
-          <input type="text" name="user" ref={userInput} />
-        </div>
-        <div className={classes['form-control']}>
-          <label htmlFor="password">Password</label>
-          <input type="password" name="password" ref={passwordInput} />
-        </div>
-        <div className={classes['form-actions']}>
-          <button onClick={onCloseModal} className="primary-btn">
-            Cancel
-          </button>
-          <button type="submit" className="primary-btn">
-            Login
-          </button>
-        </div>
+        <fieldset>
+          <legend>Login</legend>
+          <div className={classes['form-control']}>
+            <label htmlFor="user">User</label>
+            <input type="text" name="user" ref={userInput} />
+          </div>
+          <div className={classes['form-control']}>
+            <label htmlFor="password">Password</label>
+            <input type="password" name="password" ref={passwordInput} />
+          </div>
+          <div className={classes['form-actions']}>
+            <button
+              type="button"
+              onClick={onCloseModal}
+              className="primary-btn"
+            >
+              Cancel
+            </button>
+            <button type="submit" className="primary-btn">
+              Login
+            </button>
+          </div>
+        </fieldset>
       </form>
     </Modal>
   );
