@@ -3,9 +3,10 @@
   margin: 0 auto;
 }
 
-.login-form h4 {
+.login-form legend {
   margin: 0;
   margin-bottom: 15px;
+  font-size: 18px;
 }
 
 .form-control {
