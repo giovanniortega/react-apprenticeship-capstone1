@@ -9,6 +9,12 @@
   font-size: 18px;
 }
 
+.login-form fieldset {
+  padding: 0;
+  margin: 0;
+  border: none;
+}
+
 .form-control {
   display: flex;
   flex-flow: column wrap;
